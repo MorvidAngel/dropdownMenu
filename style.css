@@ -20,3 +20,46 @@ body {
     padding: 1rem;
     position: relative;
 }
+
+#navbar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* hide nested ul by default */
+#navbar ul li ul {
+    display: none;
+}
+
+#navbar ul li:hover {
+    cursor: pointer;
+    background: coral;
+    color: #fff;
+}
+
+#navbar ul li:hover a {
+    color: #fff;
+}
+
+/* nested dropdown show */
+#navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+    display: block;
+    background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+    color: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+    background: #e0e0e0;
+    color: inherit;
+}
